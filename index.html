@@ -1,0 +1,36 @@
+<html lang="”en”">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Camera App</title>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Camera -->
+    <main id="camera">
+      <video id="camera--view" autoplay playsinline></video>
+      <canvas id="camera--result"></canvas>
+      <canvas id="detections--canvas"></canvas>
+
+      <div class="ui">
+        <button id="camera--trigger"></button>
+        <button id="photo--close" class="hidden">X</button>
+        <button id="submit--trigger" class="hidden">SUBMIT</button>
+      </div>
+    </main>
+
+    <!-- Reference to your JavaScript file -->
+    <script type="module" src="js/stateMachine.js"></script>
+    <script type="module" src="js/utils.js"></script>
+    <script type="module" src="js/init.js"></script>
+    <!-- <script type="module" src="js/cameraControl.js"></script> -->
+    <!-- <script type="module" src="js/detection.js"></script> -->
+  </body>
+</html>
